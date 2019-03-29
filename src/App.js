@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <h1>Mario plan</h1>
+        <h1>Mario plan 2.0  </h1>
       </div>
+      </BrowserRouter>
     );
   }
 }
