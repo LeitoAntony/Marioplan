@@ -6,6 +6,7 @@ import ProjectDetails from './components/proyects/ProyectDetail';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import CreateProject from './components/proyects/CreateProyect';
+import Page404 from './components/layout/page404';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/signin" component={SignIn} /> 
           <Route path="/signup" component={SignUp} /> 
           <Route path="/createproject" component={CreateProject} />
+          <Route component={Page404} />
         </Switch>
       </div>
       </BrowserRouter>

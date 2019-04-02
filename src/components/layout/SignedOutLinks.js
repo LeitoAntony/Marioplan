@@ -5,10 +5,10 @@ const SinedOutLinks = () => {
     return (
         <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-                <NavLink className="nav-link" to="/">Registrarse</NavLink>
+                <NavLink className="nav-link" to="/signup">Registrarse</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link" to="/">Ingresar</NavLink>
+                <NavLink className="nav-link" to="/signin">Ingresar</NavLink>
             </li>
         </ul>
     )

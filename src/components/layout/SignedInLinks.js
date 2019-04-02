@@ -5,7 +5,7 @@ const SinedInLinks = () => {
     return (
         <ul className="navbar-nav">
             <li className="nav-item my-2">
-                <NavLink className="nav-link" to="/">Nuevo proyecto</NavLink>
+                <NavLink className="nav-link" to="/createproject">Nuevo proyecto</NavLink>
             </li>
             <li className="nav-item my-2">
                 <NavLink type="button" className="nav-link" to="/">Salir</NavLink>

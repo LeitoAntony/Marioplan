@@ -1,0 +1,13 @@
+$body-background-color: #95e8f3;
+$form-border-color: #ec407a;
+
+html { min-height: 100%;}
+body { margin:0px; padding:0; font-family: sand-serif; background-color: $body-background-color;}
+form { padding: 20px; margin-top:60px;}
+form button, form h5 { margin: 20px 0};
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea:focus:not([readonly]){
+    border-color: $form-border-color; box-shadow: none;
+}
