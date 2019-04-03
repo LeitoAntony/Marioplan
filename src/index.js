@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom';
 import './sass/style.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import rootreducer from './store/reducers/rootReducer';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
+import { reduxFirestore, getFirestore } from 'redux-firestore';
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+import fbConfig from './config/fbConfig';
 
-const store = createStore(rootreducer, applyMiddleware(thunk));
+const store = createStore(rootreducer,
+    compose(
+        applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
+        reduxFirestore(fbConfig),
+        reactReduxFirebase(fbConfig)
+    )
+);
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
