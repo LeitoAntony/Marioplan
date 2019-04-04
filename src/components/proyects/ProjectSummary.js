@@ -6,7 +6,7 @@ const ProjectSummary = ({project}) => {
             <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.content}</p>
-                <p className="card-text secondary">3rd de septiembre, 2am</p>
+                <p className="card-text secondary"></p>
 
             </div>
         </div>

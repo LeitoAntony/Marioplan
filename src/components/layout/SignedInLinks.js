@@ -8,7 +8,7 @@ const SinedInLinks = () => {
                 <NavLink className="nav-link" to="/createproject">Nuevo proyecto</NavLink>
             </li>
             <li className="nav-item my-2">
-                <NavLink type="button" className="nav-link" to="/">Salir</NavLink>
+                <NavLink className="nav-link" to="/ded">Salir</NavLink>
             </li>
             <li className="nav-item">
                 <button className="btn btn-success rounded-circle bg-success">
